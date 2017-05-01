@@ -1,13 +1,15 @@
 
 <script type="text/javascript" src="home/dhrumil/Project/bower_components/webcam/dist/webcam.min.js"></script> 
 
+<script type="text/javascript" src="home/dhrumil/Project/bower_components/webcamjs/webcam.min.js"></script> 
+
 
 
 <div class="container" style="width: 100%; margin-top: 200px; " ng-controller="compareController" ng-app="myapp">
     <!--<form style="width: 30%; margin: 0 auto;"  id="upload-form" ng-submit="uploadFile()"> -->
        	<h1> Live Image Scan to be done here...!!!</h1>
        	<video class="webcam-live" autoplay="" src="blob:https://jonas.hartmann.site/32a0d519-d1ed-48c6-8356-0610d173fc5b" width="320" height="240"></video>
-       	
+
           <webcam channel="channel" 
         on-streaming="onSuccess()" 
         on-error="onError(err)" 
